@@ -1,0 +1,50 @@
+== README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
+
+
+Please feel free to use a different markup language if you do not plan to run
+<tt>rake doc:app</tt>.
+
+How I set up this rails app:
+  - ran "rails new file_name" to install to a proper directory
+  - ran "rails generate migration migration_name" to create a Migration
+  - updated the migration file to include fields
+  - ran "rake db:migrate" and "rake db:migrate RAILS_ENV=test" to prepare tables in database
+  - updated Gemfile to include desired gems, then ran "bundle" (or "bundle install")
+  - then ran "rails generate rspec:install"
+  - made a models folder in spec, and a file called task_spec.rb
+  - write test to validate presence of :task, run "rspec" and watch it fail
+  - make a file in app/models called task.rb. Make it inherit from ActiveRecord::Base, and make it validate the presence of a task (MAKE SURE the field name matches on the test and the migration!)
+***end of setup of a rails app***
+
+How I added functionality to this rails app:
+  - Using rails console, add some tasks to the database to play with. Task.create(:task_name =>"Do stuff", :task_complete => false)
+  - Edit routes.rb file to create route from tasks to get tasks#index method
+  - In the app/controllers file, create a file called tasks_controller.rb
+  - Create an index method for the task controller
+  - Create a folder in app/views called tasks and in it create a file called index.html.erb
+continue on in this manner until all the routes and their corresponding methods and pages are created.
+
+WARNING: Vulgarity

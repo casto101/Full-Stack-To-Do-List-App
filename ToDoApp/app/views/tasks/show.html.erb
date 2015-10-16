@@ -1,0 +1,10 @@
+<h1>Your next task:</h1>
+
+<p><%= @task.task_name %></p>
+
+<p>Do this! Hurry up!</p>
+
+<p><a href="/tasks/<%= @task.id%>/edit">Edit this task</a></p>
+<p><a href="/tasks/<%=@task.id%>" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete this task</a></p>
+
+<p><a href="/tasks">Back to to do list</a></p>
